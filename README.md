@@ -1,2 +1,5 @@
 # Data-Structures
-This repo consists of various data structures
+
+## C Language
+
+- [Linked List](https://github.com/PritamSarbajna/Data-Structures/tree/main/C-Language/Linked-List)
