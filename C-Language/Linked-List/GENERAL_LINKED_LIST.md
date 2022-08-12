@@ -47,3 +47,15 @@ struct node {
 
 ![ll_page-0001](https://user-images.githubusercontent.com/90236635/184381377-d1e547db-f79c-4984-a1e3-daddf024ec58.jpg)
 
+
+- ### Doubly Circular Linked List :
+
+```
+struct node {
+    int data;
+    struct node* prev;
+    struct node* next;
+}
+```
+
+![Presentation1](https://user-images.githubusercontent.com/90236635/184383882-42a44516-01fa-434b-bd0a-2e287d399b4d.jpg)
