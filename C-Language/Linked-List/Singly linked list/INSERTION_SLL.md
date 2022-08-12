@@ -63,3 +63,35 @@ int main(){
     
 }
 ```
+
+
+## _Insert at a given position_
+
+- ### Function :
+
+```
+void InsertAtPosition(struct node** head, int val, int pos){
+    struct node* newNode = (struct node*) malloc(sizeof(struct node));
+    newNode->data = val;
+
+    struct node* temp = *head;
+
+    while(--pos){
+        temp = temp->next;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+```
+
+- ### Calling the function inside function :
+
+```
+int main(){
+    struct node* head = NULL;
+    
+    InsertAtPosition(&head, 4, 1);
+    
+}
+```
