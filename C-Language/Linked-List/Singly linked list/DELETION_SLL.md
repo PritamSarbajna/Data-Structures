@@ -26,3 +26,26 @@ int main(){
     DeleteAtEnd(&head);
 }
 ```
+
+
+## _Delete at Begin_
+
+- ### Function :
+
+```
+void DeleteAtBegin(struct node** head){
+    struct node* temp = *head;
+    *head = temp->next;
+    free(temp);
+}
+```
+
+- ### Calling the function inside function :
+
+```
+int main(){
+    struct node* head = NULL;
+
+    DeleteAtBegin(&head);
+}
+```
