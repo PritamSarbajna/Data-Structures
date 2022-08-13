@@ -49,3 +49,32 @@ int main(){
     DeleteAtBegin(&head);
 }
 ```
+
+## _Delete at Begin_
+
+- ### Function :
+
+```
+void DeleteAtPosition(struct node** head, int pos){
+    struct node* temp = *head;
+
+    while(pos--){
+        temp = temp->next;
+    }
+
+    struct node* toDelete = temp->next;
+    temp->data = temp->next->data;
+    temp->next = temp->next->next;
+    free(toDelete);
+}
+```
+
+- ### Calling the function inside function :
+
+```
+int main(){
+    struct node* head = NULL;
+
+    DeleteAtPosition(&head, 1);
+}
+```
