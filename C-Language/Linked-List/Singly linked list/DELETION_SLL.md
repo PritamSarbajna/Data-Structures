@@ -50,7 +50,7 @@ int main(){
 }
 ```
 
-## _Delete at Begin_
+## _Delete at Position_
 
 - ### Function :
 
