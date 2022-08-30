@@ -14,3 +14,14 @@ void push(int val){
 }
 ```
 
+- ## _pop()_
+
+```
+void pop(){
+    if(top == -1){
+        printf("Stack Underflow\n");
+    }
+
+    top--;
+}
+```
