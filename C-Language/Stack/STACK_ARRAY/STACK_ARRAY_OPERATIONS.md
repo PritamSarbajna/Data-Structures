@@ -25,3 +25,42 @@ void pop(){
     top--;
 }
 ```
+
+
+- ## _peek()_
+
+```
+int peek(){
+
+    if(top == -1){
+        printf("Stack is empty\n");
+        return -1;
+    }
+
+    return stack[top];
+}
+```
+
+- ## _isFull()_
+
+```
+bool isFull(){
+    if(top == N-1){
+        return true;
+    }
+
+    return false;
+}
+```
+
+## _isEmpty()_
+
+```
+bool isEmpty(){
+    if(top == -1){
+        return true;
+    }
+
+    return false;
+}
+```
