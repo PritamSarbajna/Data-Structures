@@ -12,3 +12,14 @@ void push(int val){
 }
 ```
 
+
+- ## _pop()_
+
+```
+void pop(){
+    struct node *toDelete = top;
+    top = top->next;
+    free(toDelete);
+}
+```
+
