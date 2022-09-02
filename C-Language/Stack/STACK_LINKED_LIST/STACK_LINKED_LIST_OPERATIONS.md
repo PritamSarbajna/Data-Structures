@@ -36,3 +36,15 @@ int peek(){
 }
 ```
 
+- ## _display()_
+
+```
+void display(){
+    struct node *temp = top;
+
+    while(temp != NULL){
+        printf("%d ",temp->data);
+        temp = temp->next;
+    }
+}
+```
