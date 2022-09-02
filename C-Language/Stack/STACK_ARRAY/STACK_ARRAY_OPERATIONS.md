@@ -64,3 +64,13 @@ bool isEmpty(){
     return false;
 }
 ```
+
+## _display()_
+
+```
+void display(){
+    for(int i=top; i>=0; i--){
+        printf("%d ", stack[i]);
+    }
+}
+```
