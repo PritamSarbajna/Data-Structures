@@ -23,3 +23,16 @@ void pop(){
 }
 ```
 
+- ## _peek()_
+
+```
+int peek(){
+
+    if(top == NULL){
+        return -1;
+    }
+
+    return top->data;
+}
+```
+
